@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8126D741243F514600028B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D740243F514600028B19 /* AppDelegate.swift */; };
+		8126D743243F514600028B19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D742243F514600028B19 /* SceneDelegate.swift */; };
+		8126D745243F514600028B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D744243F514600028B19 /* ViewController.swift */; };
+		8126D748243F514600028B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8126D746243F514600028B19 /* Main.storyboard */; };
+		8126D74A243F514700028B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8126D749243F514700028B19 /* Assets.xcassets */; };
+		8126D74D243F514700028B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8126D74B243F514700028B19 /* LaunchScreen.storyboard */; };
+		8126D758243F514800028B19 /* nubankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D757243F514800028B19 /* nubankTests.swift */; };
+		8126D763243F514800028B19 /* nubankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D762243F514800028B19 /* nubankUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8126D754243F514800028B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8126D735243F514600028B19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8126D73C243F514600028B19;
+			remoteInfo = nubank;
+		};
+		8126D75F243F514800028B19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8126D735243F514600028B19 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8126D73C243F514600028B19;
+			remoteInfo = nubank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8126D73D243F514600028B19 /* nubank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nubank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8126D740243F514600028B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8126D742243F514600028B19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8126D744243F514600028B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8126D747243F514600028B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8126D749243F514700028B19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8126D74C243F514700028B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8126D74E243F514700028B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8126D753243F514800028B19 /* nubankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nubankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8126D757243F514800028B19 /* nubankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nubankTests.swift; sourceTree = "<group>"; };
+		8126D759243F514800028B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8126D75E243F514800028B19 /* nubankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nubankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8126D762243F514800028B19 /* nubankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nubankUITests.swift; sourceTree = "<group>"; };
+		8126D764243F514800028B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8126D73A243F514600028B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8126D750243F514800028B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8126D75B243F514800028B19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8126D734243F514600028B19 = {
+			isa = PBXGroup;
+			children = (
+				8126D73F243F514600028B19 /* nubank */,
+				8126D756243F514800028B19 /* nubankTests */,
+				8126D761243F514800028B19 /* nubankUITests */,
+				8126D73E243F514600028B19 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8126D73E243F514600028B19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8126D73D243F514600028B19 /* nubank.app */,
+				8126D753243F514800028B19 /* nubankTests.xctest */,
+				8126D75E243F514800028B19 /* nubankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8126D73F243F514600028B19 /* nubank */ = {
+			isa = PBXGroup;
+			children = (
+				8126D740243F514600028B19 /* AppDelegate.swift */,
+				8126D742243F514600028B19 /* SceneDelegate.swift */,
+				8126D744243F514600028B19 /* ViewController.swift */,
+				8126D746243F514600028B19 /* Main.storyboard */,
+				8126D749243F514700028B19 /* Assets.xcassets */,
+				8126D74B243F514700028B19 /* LaunchScreen.storyboard */,
+				8126D74E243F514700028B19 /* Info.plist */,
+			);
+			path = nubank;
+			sourceTree = "<group>";
+		};
+		8126D756243F514800028B19 /* nubankTests */ = {
+			isa = PBXGroup;
+			children = (
+				8126D757243F514800028B19 /* nubankTests.swift */,
+				8126D759243F514800028B19 /* Info.plist */,
+			);
+			path = nubankTests;
+			sourceTree = "<group>";
+		};
+		8126D761243F514800028B19 /* nubankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8126D762243F514800028B19 /* nubankUITests.swift */,
+				8126D764243F514800028B19 /* Info.plist */,
+			);
+			path = nubankUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8126D73C243F514600028B19 /* nubank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8126D767243F514800028B19 /* Build configuration list for PBXNativeTarget "nubank" */;
+			buildPhases = (
+				8126D739243F514600028B19 /* Sources */,
+				8126D73A243F514600028B19 /* Frameworks */,
+				8126D73B243F514600028B19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nubank;
+			productName = nubank;
+			productReference = 8126D73D243F514600028B19 /* nubank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8126D752243F514800028B19 /* nubankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8126D76A243F514800028B19 /* Build configuration list for PBXNativeTarget "nubankTests" */;
+			buildPhases = (
+				8126D74F243F514800028B19 /* Sources */,
+				8126D750243F514800028B19 /* Frameworks */,
+				8126D751243F514800028B19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8126D755243F514800028B19 /* PBXTargetDependency */,
+			);
+			name = nubankTests;
+			productName = nubankTests;
+			productReference = 8126D753243F514800028B19 /* nubankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8126D75D243F514800028B19 /* nubankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8126D76D243F514800028B19 /* Build configuration list for PBXNativeTarget "nubankUITests" */;
+			buildPhases = (
+				8126D75A243F514800028B19 /* Sources */,
+				8126D75B243F514800028B19 /* Frameworks */,
+				8126D75C243F514800028B19 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8126D760243F514800028B19 /* PBXTargetDependency */,
+			);
+			name = nubankUITests;
+			productName = nubankUITests;
+			productReference = 8126D75E243F514800028B19 /* nubankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8126D735243F514600028B19 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "VInicius Mesquita";
+				TargetAttributes = {
+					8126D73C243F514600028B19 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					8126D752243F514800028B19 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8126D73C243F514600028B19;
+					};
+					8126D75D243F514800028B19 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 8126D73C243F514600028B19;
+					};
+				};
+			};
+			buildConfigurationList = 8126D738243F514600028B19 /* Build configuration list for PBXProject "nubank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8126D734243F514600028B19;
+			productRefGroup = 8126D73E243F514600028B19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8126D73C243F514600028B19 /* nubank */,
+				8126D752243F514800028B19 /* nubankTests */,
+				8126D75D243F514800028B19 /* nubankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8126D73B243F514600028B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8126D74D243F514700028B19 /* LaunchScreen.storyboard in Resources */,
+				8126D74A243F514700028B19 /* Assets.xcassets in Resources */,
+				8126D748243F514600028B19 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8126D751243F514800028B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8126D75C243F514800028B19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8126D739243F514600028B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8126D745243F514600028B19 /* ViewController.swift in Sources */,
+				8126D741243F514600028B19 /* AppDelegate.swift in Sources */,
+				8126D743243F514600028B19 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8126D74F243F514800028B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8126D758243F514800028B19 /* nubankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8126D75A243F514800028B19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8126D763243F514800028B19 /* nubankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8126D755243F514800028B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8126D73C243F514600028B19 /* nubank */;
+			targetProxy = 8126D754243F514800028B19 /* PBXContainerItemProxy */;
+		};
+		8126D760243F514800028B19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8126D73C243F514600028B19 /* nubank */;
+			targetProxy = 8126D75F243F514800028B19 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8126D746243F514600028B19 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8126D747243F514600028B19 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8126D74B243F514700028B19 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8126D74C243F514700028B19 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8126D765243F514800028B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8126D766243F514800028B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8126D768243F514800028B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = nubank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vinicius.nubank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8126D769243F514800028B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = nubank/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vinicius.nubank;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8126D76B243F514800028B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = nubankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vinicius.nubankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nubank.app/nubank";
+			};
+			name = Debug;
+		};
+		8126D76C243F514800028B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = nubankTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vinicius.nubankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nubank.app/nubank";
+			};
+			name = Release;
+		};
+		8126D76E243F514800028B19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = nubankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vinicius.nubankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nubank;
+			};
+			name = Debug;
+		};
+		8126D76F243F514800028B19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = nubankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Vinicius.nubankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = nubank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8126D738243F514600028B19 /* Build configuration list for PBXProject "nubank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8126D765243F514800028B19 /* Debug */,
+				8126D766243F514800028B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8126D767243F514800028B19 /* Build configuration list for PBXNativeTarget "nubank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8126D768243F514800028B19 /* Debug */,
+				8126D769243F514800028B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8126D76A243F514800028B19 /* Build configuration list for PBXNativeTarget "nubankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8126D76B243F514800028B19 /* Debug */,
+				8126D76C243F514800028B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8126D76D243F514800028B19 /* Build configuration list for PBXNativeTarget "nubankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8126D76E243F514800028B19 /* Debug */,
+				8126D76F243F514800028B19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8126D735243F514600028B19 /* Project object */;
+}
