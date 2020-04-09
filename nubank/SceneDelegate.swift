@@ -14,6 +14,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+            // Force convert UIScene type variable to UIWindowScene type variable.
+            let windowScene: UIWindowScene = scene as! UIWindowScene;
+            
+            // Create the UIWindow variable use above UIWindowScene variable.
+            window = UIWindow(windowScene: windowScene)
+        
+            // Create a ViewController object and set it as the scene's window's root view controller.
+            window?.rootViewController = ViewController()
+            
+            // Make this scene's window be visible.
+            window?.makeKeyAndVisible()
+        
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).

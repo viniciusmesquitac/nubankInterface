@@ -10,11 +10,13 @@
 		8126D741243F514600028B19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D740243F514600028B19 /* AppDelegate.swift */; };
 		8126D743243F514600028B19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D742243F514600028B19 /* SceneDelegate.swift */; };
 		8126D745243F514600028B19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D744243F514600028B19 /* ViewController.swift */; };
-		8126D748243F514600028B19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8126D746243F514600028B19 /* Main.storyboard */; };
 		8126D74A243F514700028B19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8126D749243F514700028B19 /* Assets.xcassets */; };
 		8126D74D243F514700028B19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8126D74B243F514700028B19 /* LaunchScreen.storyboard */; };
 		8126D758243F514800028B19 /* nubankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D757243F514800028B19 /* nubankTests.swift */; };
 		8126D763243F514800028B19 /* nubankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D762243F514800028B19 /* nubankUITests.swift */; };
+		8126D776243F64E300028B19 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D775243F64E300028B19 /* OptionCollectionViewCell.swift */; };
+		8126D779243F690400028B19 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D778243F690400028B19 /* CustomColors.swift */; };
+		8126D77B243FBAA600028B19 /* CustomBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D77A243FBAA500028B19 /* CustomBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,6 @@
 		8126D740243F514600028B19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8126D742243F514600028B19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8126D744243F514600028B19 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8126D747243F514600028B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8126D749243F514700028B19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8126D74C243F514700028B19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8126D74E243F514700028B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +50,9 @@
 		8126D75E243F514800028B19 /* nubankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = nubankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8126D762243F514800028B19 /* nubankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nubankUITests.swift; sourceTree = "<group>"; };
 		8126D764243F514800028B19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8126D775243F64E300028B19 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		8126D778243F690400028B19 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		8126D77A243FBAA500028B19 /* CustomBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +103,11 @@
 		8126D73F243F514600028B19 /* nubank */ = {
 			isa = PBXGroup;
 			children = (
+				8126D777243F68F300028B19 /* Constants */,
+				8126D772243F5DB000028B19 /* Views */,
 				8126D740243F514600028B19 /* AppDelegate.swift */,
 				8126D742243F514600028B19 /* SceneDelegate.swift */,
 				8126D744243F514600028B19 /* ViewController.swift */,
-				8126D746243F514600028B19 /* Main.storyboard */,
 				8126D749243F514700028B19 /* Assets.xcassets */,
 				8126D74B243F514700028B19 /* LaunchScreen.storyboard */,
 				8126D74E243F514700028B19 /* Info.plist */,
@@ -126,6 +131,23 @@
 				8126D764243F514800028B19 /* Info.plist */,
 			);
 			path = nubankUITests;
+			sourceTree = "<group>";
+		};
+		8126D772243F5DB000028B19 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8126D775243F64E300028B19 /* OptionCollectionViewCell.swift */,
+				8126D77A243FBAA500028B19 /* CustomBoxView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8126D777243F68F300028B19 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				8126D778243F690400028B19 /* CustomColors.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +256,6 @@
 			files = (
 				8126D74D243F514700028B19 /* LaunchScreen.storyboard in Resources */,
 				8126D74A243F514700028B19 /* Assets.xcassets in Resources */,
-				8126D748243F514600028B19 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +281,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8126D745243F514600028B19 /* ViewController.swift in Sources */,
+				8126D776243F64E300028B19 /* OptionCollectionViewCell.swift in Sources */,
 				8126D741243F514600028B19 /* AppDelegate.swift in Sources */,
+				8126D77B243FBAA600028B19 /* CustomBoxView.swift in Sources */,
+				8126D779243F690400028B19 /* CustomColors.swift in Sources */,
 				8126D743243F514600028B19 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,14 +321,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8126D746243F514600028B19 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8126D747243F514600028B19 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8126D74B243F514700028B19 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
