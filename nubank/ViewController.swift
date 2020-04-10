@@ -149,8 +149,6 @@ enum Options: String, CaseIterable {
     case pague = "Pagar"
 }
 
-typealias CollectionViewProtocols = UICollectionViewDelegateFlowLayout & UICollectionViewDataSource
-
 extension ViewController : CollectionViewProtocols {
     
     func setupCollectionView() {

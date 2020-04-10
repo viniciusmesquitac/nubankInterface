@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+typealias CollectionViewProtocols = UICollectionViewDelegateFlowLayout & UICollectionViewDataSource
+
 extension UIColor {
     
     static let nubankMainColor = #colorLiteral(red: 0.5450980392, green: 0.01568627451, blue: 0.7450980392, alpha: 1)
