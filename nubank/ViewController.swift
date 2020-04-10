@@ -31,24 +31,18 @@ class ViewController: UIViewController {
         let view = CustomBoxView()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
+        view.layer.cornerRadius = 2.0
         view.isUserInteractionEnabled = true
         return view
     }()
     
-    // creating collection view layout [ work around to vertical collection view ]
-    lazy var compositionalLayout: UICollectionViewCompositionalLayout = {
-        let layout = UICollectionViewCompositionalLayout { [weak self]
-            (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
-            return self?.setupCellsLayoutSection()
-        }
-        return layout
-    }()
-    
     lazy var collectionOptionView: UICollectionView = {
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: compositionalLayout)
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.backgroundColor = .nubankMainColor
-        collectionView.isScrollEnabled = false
+        collectionView.showsHorizontalScrollIndicator = false
         collectionView.delegate = self
         collectionView.dataSource = self
         return collectionView
@@ -89,18 +83,18 @@ class ViewController: UIViewController {
         
         // box view constraints
         NSLayoutConstraint.activate([
-            boxView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -50),
-            boxView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 0),
-            boxView.heightAnchor.constraint(equalToConstant: 300),
-            boxView.widthAnchor.constraint(equalToConstant: 300)
+            boxView.topAnchor.constraint(equalTo: view.topAnchor, constant: view.center.x),
+            boxView.heightAnchor.constraint(equalToConstant: view.center.y * 0.8),
+            boxView.trailingAnchor.constraint(equalTo: view.trailingAnchor,  constant: -20),
+            boxView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:  20)
         ])
         
         // collection view constraints
         NSLayoutConstraint.activate([
-            collectionOptionView.topAnchor.constraint(equalTo: boxView.bottomAnchor, constant: 50),
+            collectionOptionView.heightAnchor.constraint(equalToConstant: 200),
             collectionOptionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionOptionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            collectionOptionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -45)
+            collectionOptionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
         
         
@@ -108,39 +102,7 @@ class ViewController: UIViewController {
         textLabelView.center.y = imageIconView.center.y
     }
     
-    
-    func setupCellsLayoutSection() -> NSCollectionLayoutSection {
-        let item = NSCollectionLayoutItem(
-            layoutSize: NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0),
-                                               heightDimension: .fractionalHeight(1.0)))
-        
-        item.contentInsets = NSDirectionalEdgeInsets(top: 0.0,
-                                                     leading: 8.0,
-                                                     bottom: 0.0,
-                                                     trailing: 8.0)
-        // Group
-        let group = NSCollectionLayoutGroup.vertical(
-            layoutSize: NSCollectionLayoutSize(widthDimension: .estimated(120),
-                                               heightDimension: .absolute(120)),
-                                                                subitem: item,
-                                                                count: 1)
-        
-        // Section
-        let section = NSCollectionLayoutSection(group: group)
-        section.contentInsets = NSDirectionalEdgeInsets(top: 16.0,
-                                                        leading: 0.0,
-                                                        bottom: 16.0,
-                                                        trailing: 0.0)
-        
-        // 2. Magic: Horizontal Scroll.
-        section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
-        
-        return section
-    }
-    
 }
-
-
 
 enum Options: String, CaseIterable {
     case indicar = "Indique\nAmigos"
@@ -157,6 +119,10 @@ extension ViewController : CollectionViewProtocols {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return Options.allCases.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 120, height: 120)
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
