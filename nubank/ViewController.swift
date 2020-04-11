@@ -29,8 +29,8 @@ class ViewController: UIViewController {
     
     lazy var boxView: CustomBoxView = {
         let view = CustomBoxView()
+        view.showsHorizontalScrollIndicator = false
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = .white
         view.layer.cornerRadius = 2.0
         view.isUserInteractionEnabled = true
         return view

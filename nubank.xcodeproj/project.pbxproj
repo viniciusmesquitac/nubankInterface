@@ -17,6 +17,7 @@
 		8126D776243F64E300028B19 /* OptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D775243F64E300028B19 /* OptionCollectionViewCell.swift */; };
 		8126D779243F690400028B19 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D778243F690400028B19 /* CustomColors.swift */; };
 		8126D77B243FBAA600028B19 /* CustomBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D77A243FBAA500028B19 /* CustomBoxView.swift */; };
+		8126D77D2441512200028B19 /* CustomBoxViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8126D77C2441512200028B19 /* CustomBoxViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		8126D775243F64E300028B19 /* OptionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionCollectionViewCell.swift; sourceTree = "<group>"; };
 		8126D778243F690400028B19 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		8126D77A243FBAA500028B19 /* CustomBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBoxView.swift; sourceTree = "<group>"; };
+		8126D77C2441512200028B19 /* CustomBoxViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBoxViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 			children = (
 				8126D775243F64E300028B19 /* OptionCollectionViewCell.swift */,
 				8126D77A243FBAA500028B19 /* CustomBoxView.swift */,
+				8126D77C2441512200028B19 /* CustomBoxViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				8126D776243F64E300028B19 /* OptionCollectionViewCell.swift in Sources */,
 				8126D741243F514600028B19 /* AppDelegate.swift in Sources */,
 				8126D77B243FBAA600028B19 /* CustomBoxView.swift in Sources */,
+				8126D77D2441512200028B19 /* CustomBoxViewCell.swift in Sources */,
 				8126D779243F690400028B19 /* CustomColors.swift in Sources */,
 				8126D743243F514600028B19 /* SceneDelegate.swift in Sources */,
 			);
