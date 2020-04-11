@@ -83,10 +83,10 @@ class ViewController: UIViewController {
         
         // box view constraints
         NSLayoutConstraint.activate([
-            boxView.topAnchor.constraint(equalTo: view.topAnchor, constant: view.center.x),
-            boxView.heightAnchor.constraint(equalToConstant: view.center.y * 0.8),
-            boxView.trailingAnchor.constraint(equalTo: view.trailingAnchor,  constant: -20),
-            boxView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant:  20)
+            boxView.topAnchor.constraint(equalTo: view.topAnchor, constant: view.center.x - 20),
+            boxView.heightAnchor.constraint(equalToConstant: view.center.y * 0.8 + 20),
+            boxView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            boxView.leadingAnchor.constraint(equalTo: view.leadingAnchor)
         ])
         
         // collection view constraints

@@ -19,6 +19,7 @@ class CustomBoxView: UICollectionView {
         
         self.register(CustomBoxViewCell.self, forCellWithReuseIdentifier: "cellId")
         self.delegate = self
+        self.backgroundColor = .nubankMainColor
         self.dataSource = self
         setupGestures()
     }
@@ -72,7 +73,12 @@ extension CustomBoxView: CollectionViewProtocols {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return self.frame.size
+        let size = CGSize(width: self.frame.width - 20, height: self.frame.height - 20)
+        return size
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
     }
 }
 
