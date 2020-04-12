@@ -44,8 +44,8 @@ class OptionsCollectionViewCell: UICollectionViewCell {
     func setupConstraints() {
         // text label costraints
         NSLayoutConstraint.activate([
-            textLabel.centerYAnchor.constraint(equalTo: self.centerYAnchor, constant: 40),
-            textLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor, constant: 0),
+            textLabel.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 10),
+            textLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -10)
         ])
         
         // image icon constraints

@@ -10,14 +10,14 @@ import UIKit
 
 class CustomBoxViewCell: UICollectionViewCell {
     
-    lazy var imageIconView: UIImageView = {
+    var imageIconView: UIImageView = {
         let imageView = UIImageView()
         imageView.image = UIImage(named: "creditcard")
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    lazy var textLabelTitle: UILabel = {
+    var textLabelTitle: UILabel = {
         let label = UILabel()
         label.text = "FATURA FECHADA"
         label.textColor = .black
@@ -26,7 +26,7 @@ class CustomBoxViewCell: UICollectionViewCell {
         return label
     }()
     
-    lazy var textLabelPrice: UILabel = {
+    var textLabelPrice: UILabel = {
         let label = UILabel()
         label.text = "R$ 1.328,40"
         label.textColor = .black
@@ -35,7 +35,7 @@ class CustomBoxViewCell: UICollectionViewCell {
         return label
     }()
     
-    lazy var textLabelWarning: UILabel = {
+    var textLabelWarning: UILabel = {
         let label = UILabel()
         label.text = "VENCIMENTO 25 MAR"
         label.textColor = .gray
@@ -45,9 +45,10 @@ class CustomBoxViewCell: UICollectionViewCell {
     }()
     
     
-    lazy var fotterInfoView: UIView = {
-        let view = UIView()
+    var bottomInfoView: BottominfoBoxView = {
+        let view = BottominfoBoxView()
         view.backgroundColor = .customGray
+        view.layer.cornerRadius = 5.0
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -55,6 +56,7 @@ class CustomBoxViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.layer.cornerRadius = 5.0
         buildViewHierarchy()
         setupConstraints()
     }
@@ -69,7 +71,7 @@ class CustomBoxViewCell: UICollectionViewCell {
         self.addSubview(textLabelTitle)
         self.addSubview(textLabelPrice)
         self.addSubview(textLabelWarning)
-        self.addSubview(fotterInfoView)
+        self.addSubview(bottomInfoView)
     }
     
     
@@ -100,10 +102,10 @@ class CustomBoxViewCell: UICollectionViewCell {
         
         // footer constraint
         NSLayoutConstraint.activate([
-            fotterInfoView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            fotterInfoView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            fotterInfoView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
-            fotterInfoView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/4)
+            bottomInfoView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            bottomInfoView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            bottomInfoView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            bottomInfoView.heightAnchor.constraint(equalTo: self.heightAnchor, multiplier: 1/4)
         ])
         
     }

@@ -29,9 +29,9 @@ class ViewController: UIViewController {
     
     lazy var boxView: CustomBoxView = {
         let view = CustomBoxView()
+        view.isPagingEnabled = true
         view.showsHorizontalScrollIndicator = false
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.layer.cornerRadius = 2.0
         view.isUserInteractionEnabled = true
         return view
     }()
@@ -69,14 +69,14 @@ class ViewController: UIViewController {
         
         // Image icon logo nubank constraints
         NSLayoutConstraint.activate([
-            imageIconView.bottomAnchor.constraint(equalTo: boxView.topAnchor, constant: -30),
+            imageIconView.topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 10),
             imageIconView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: -60),
             imageIconView.heightAnchor.constraint(equalToConstant: 30)
         ])
         
         // text view name user constraints
         NSLayoutConstraint.activate([
-            textLabelView.bottomAnchor.constraint(equalTo: boxView.topAnchor, constant: -30),
+            textLabelView.topAnchor.constraint(equalToSystemSpacingBelow: view.topAnchor, multiplier: 10),
             textLabelView.centerXAnchor.constraint(equalTo: view.centerXAnchor, constant: 10),
             textLabelView.heightAnchor.constraint(equalToConstant: 30)
         ])
