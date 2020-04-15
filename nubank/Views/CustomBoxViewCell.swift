@@ -76,6 +76,7 @@ class CustomBoxViewCell: UICollectionViewCell {
     
     
     func setupConstraints() {
+        
         // image icon constraint
         NSLayoutConstraint.activate([
             imageIconView.heightAnchor.constraint(equalToConstant: 30),

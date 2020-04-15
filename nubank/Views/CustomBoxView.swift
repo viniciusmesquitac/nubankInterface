@@ -21,6 +21,7 @@ class CustomBoxView: UICollectionView {
         self.delegate = self
         self.backgroundColor = .nubankMainColor
         self.dataSource = self
+        self.isUserInteractionEnabled = false
         setupGestures()
     }
 
@@ -29,9 +30,9 @@ class CustomBoxView: UICollectionView {
      }
     
     func setupGestures() {
-        // gestures
+        /* creating and adding gestures */
         let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(animateSwipeDown(gesture:)))
-        swipeDown.direction = .down
+         swipeDown.direction = .down
         
         let swipeUp = UISwipeGestureRecognizer(target: self, action: #selector(animateSwipeUp(gesture:)))
         swipeUp.direction = .up
@@ -40,23 +41,48 @@ class CustomBoxView: UICollectionView {
         self.addGestureRecognizer(swipeUp)
     }
     
-    // gestures
      @objc func animateSwipeDown(gesture: UISwipeGestureRecognizer) {
-         
-         if gesture.direction == .down {
-             print(gesture.direction)
-             self.layer.position.y += 300
-         }
-         
-     }
-     
-     @objc func animateSwipeUp(gesture: UISwipeGestureRecognizer) {
-         
-            if gesture.direction == .up {
-                print(gesture.direction)
-                self.layer.position.y -= 300
+        
+      let swipeDown = UIPanGestureRecognizer(target: self, action: #selector(animateDown(gesture:)))
+        
+        if gesture.direction == .down {
+            let location = gesture.location(in: self)
+            print("location \(location)")
+            self.addGestureRecognizer(swipeDown)
+        }
+    }
+    
+    @objc func animateSwipeUp(gesture: UISwipeGestureRecognizer) {
+        let swipeDown = UIPanGestureRecognizer(target: self, action: #selector(animateDown(gesture:)))
+        if gesture.direction == .up {
+            self.addGestureRecognizer(swipeDown)
+        }
+    }
+
+    
+    /* work around */
+    @objc func animateDown(gesture: UIPanGestureRecognizer) {
+        
+        if gesture.state == .changed {
+            let translation = gesture.translation(in: self)
+            if translation.y > -1.0 {
+                print(translation.y)
+                self.transform = CGAffineTransform(translationX: 0, y: translation.y)
             }
         }
+        /* creating and animation to inital position */
+        if gesture.state == .ended {
+            print("removed")
+            UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
+                self.transform = .identity
+            })
+            
+            self.removeGestureRecognizer(gesture)
+            
+            
+        }
+    }
+    
 }
 
 extension CustomBoxView: CollectionViewProtocols {
