@@ -36,6 +36,16 @@ class ViewController: UIViewController {
         return view
     }()
     
+    static var pageControl: UIPageControl = {
+        let pageView = UIPageControl()
+        pageView.numberOfPages = 3
+        pageView.currentPage = 0
+        pageView.translatesAutoresizingMaskIntoConstraints = false
+        pageView.currentPageIndicatorTintColor = .white
+        pageView.pageIndicatorTintColor = .nubankCardColor
+        return pageView
+    }()
+    
     lazy var collectionOptionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
@@ -62,6 +72,7 @@ class ViewController: UIViewController {
         view.addSubview(textLabelView)
         view.addSubview(imageIconView)
         view.addSubview(collectionOptionView)
+        view.addSubview(ViewController.pageControl)
         view.bringSubviewToFront(boxView)
     }
     
@@ -95,6 +106,13 @@ class ViewController: UIViewController {
             collectionOptionView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             collectionOptionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             collectionOptionView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+        ])
+        
+        // page control constraints
+        NSLayoutConstraint.activate([
+            ViewController.pageControl.topAnchor.constraint(equalTo: boxView.bottomAnchor, constant: 0),
+            ViewController.pageControl.trailingAnchor.constraint(equalTo: view.trailingAnchor),
+            ViewController.pageControl.leadingAnchor.constraint(equalTo: view.leadingAnchor)
         ])
         
         

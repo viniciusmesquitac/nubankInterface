@@ -19,8 +19,8 @@ class CustomBoxView: UICollectionView {
         
         self.register(CustomBoxViewCell.self, forCellWithReuseIdentifier: "cellId")
         self.delegate = self
-        self.backgroundColor = .nubankMainColor
         self.dataSource = self
+        self.backgroundColor = .none
         self.isUserInteractionEnabled = false
         setupGestures()
     }
@@ -66,6 +66,7 @@ class CustomBoxView: UICollectionView {
         if gesture.state == .changed {
             let translation = gesture.translation(in: self)
             if translation.y > -1.0 {
+                ViewController.pageControl.isHidden = true
                 print(translation.y)
                 self.transform = CGAffineTransform(translationX: 0, y: translation.y)
             }
@@ -73,8 +74,10 @@ class CustomBoxView: UICollectionView {
         /* creating and animation to inital position */
         if gesture.state == .ended {
             print("removed")
+            
             UIView.animate(withDuration: 1, delay: 0, usingSpringWithDamping: 1, initialSpringVelocity: 1, options: .curveEaseIn, animations: {
                 self.transform = .identity
+                ViewController.pageControl.isHidden = false
             })
             
             self.removeGestureRecognizer(gesture)
@@ -109,6 +112,12 @@ extension CustomBoxView: CollectionViewProtocols {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        let x = targetContentOffset.pointee.x
+        ViewController.pageControl.currentPage = Int( x / self.frame.width )
     }
 }
 
